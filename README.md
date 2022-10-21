@@ -4,9 +4,9 @@
 
 
 # 개발 툴
-  # asp.net
-  # MSSQL
-  # Visual Studio 2017
+  * asp.net
+  * MSSQL
+  * Visual Studio 2017
 
 
 
