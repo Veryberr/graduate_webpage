@@ -10,7 +10,7 @@
   * Visual Studio 2017
 
 --------------------------------
-작품 소개
+작품 소개 |
 [작품소개7조-배화여자대학교.pptx](https://github.com/Veryberr/graduate_webpage/files/9840056/7.-.pptx)
 
 
