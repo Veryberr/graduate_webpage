@@ -1,0 +1,212 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="proj02.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .header { height: 60px; min-width: 600px; background-color: indigo;
+                     color: white; padding: 10px;    }
+        .nav { float: left; width: 150px; min-height: 300px;
+               background-color: pink; padding: 10px;     }
+        .article { float: left; min-width: 400px; min-height: 300px;
+                   padding: 10px;      }
+        .footer { clear: both; height: 40px; background-color: silver;
+                   padding: 10px; font-size: small;   }
+        .style1 {
+            height: 84px;
+            min-width: 400px;
+            background-color: #FFFFFF;
+            color: #FFFF00;
+            padding: 10px;
+            font-size: x-large;
+            text-align: center;
+        }
+        .style2 {
+            float: left;
+            width: 165px;
+            min-height: 300px;
+            background-color: #3399FF;
+            padding: 10px;
+            height: 543px;
+            color: #FFFF00;
+        }
+        .style6 {
+            height: 26px;
+            min-width: 600px;
+            background-color: #CCCCCC;
+            color: #FFFF00;
+            padding: 10px;
+            font-size: x-large;
+            text-align: left;
+        }
+        .style7 {
+            color: #000000;
+            font-size: xx-large;
+        }
+        .style13 {
+            font-size: medium;
+        }
+        .auto-style1 {
+            float: left;
+            width: 165px;
+            min-height: 300px;
+            background-color: #3399FF;
+            padding: 10px;
+            height: 854px;
+            color: #FFFF00;
+        }
+        .auto-style4 {
+            margin-right: 0px;
+        }
+        .auto-style5 {
+            clear: both;
+            height: 58px;
+            background-color: silver;
+            padding: 10px;
+            font-size: small;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="style1">
+
+             <span class="style7"><strong>
+             <asp:Image ID="Image1" runat="server" Height="77px" ImageUrl="~/Baewha/baewhalogo.jpg" Width="340px" />
+             <br />
+             </strong></span>
+             <br />
+         </div>
+        <div class="style6">
+
+            <asp:Panel ID="Panel4" runat="server" CssClass="style13">
+                <asp:Panel ID="Panel8" runat="server">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/IMAGE/001.png" Width="20px" />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/GuestBook/List.aspx">방명록</asp:HyperLink>
+                    &nbsp;
+
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/IMAGE/002.png" Width="20px" />
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ALBUM/List.aspx">사진앨범(학식)</asp:HyperLink>
+                    &nbsp;&nbsp;<asp:Image ID="Image4" runat="server" ImageUrl="~/IMAGE/003.png" Width="20px" />
+                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Board/List.aspx">Q&amp;A</asp:HyperLink>
+                    &nbsp;<asp:Image ID="Image5" runat="server" ImageUrl="~/IMAGE/004.png" Width="20px" />
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/NoteList.aspx">대나무숲</asp:HyperLink>
+                    &nbsp;
+                    <asp:Image ID="Image6" runat="server" ImageUrl="~/IMAGE/005.png" Width="20px" />
+                    <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Link.aspx">학교 관련페이지 바로가기</asp:HyperLink>
+                </asp:Panel>
+            </asp:Panel>
+         </div>
+       
+        <div class="auto-style1">
+
+            &nbsp;<asp:Panel ID="Panel2" runat="server" CssClass="style13" Height="250px">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="70px" ImageUrl="~/Images/회원가입.png" OnClick="ImageButton1_Click3" Width="82px" />
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="70px" ImageUrl="~/Images/Login.png" OnClick="ImageButton2_Click1" Width="82px" />
+                <br />
+
+                <br />
+
+               </asp:Panel>
+            <asp:Panel ID="Panel3" runat="server" Height="200px" CssClass="auto-style4">
+                <strong>
+                <br />
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+                <br />
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="70px" ImageUrl="~/Images/Logout.png" OnClick="ImageButton3_Click" Width="82px" />
+                </strong>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/MemberOnly/Modify.aspx">MY PAGE</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/MemberOnly/CalendarEx.aspx">일정관리 기능</asp:HyperLink>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </asp:Panel>
+            <strong><br />
+            <br />
+            <br />
+            <br />
+            </strong>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </div>
+        <div class="article">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                기본 콘텐츠
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="auto-style5">
+
+            <strong>포트폴리오 설계        
+                   <br />
+                   <br />
+            202031069 남현서 | 202031072 박혜서 | 202031083 정성원<br />
+            </strong>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </div>
+
+    </form>
+</body>
+</html>
